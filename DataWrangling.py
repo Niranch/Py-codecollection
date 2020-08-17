@@ -22,7 +22,7 @@ df = pd.read_csv(filename, names = headers)
 #Examine few sets of data
 print(df.head(5))
 
-#Missing values from source have come as ? in the data file. Replace them with NaN(Not A Null)
+#Missing values from source have come as ? in the data file. Replace them with NaN(Not A Number)
 
 df.replace("?", np.nan, inplace = True)
 print(df.head(5))
